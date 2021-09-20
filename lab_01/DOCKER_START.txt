@@ -1,0 +1,2 @@
+docker exec -it <container_name> bash
+docker start postgres_lab_1
