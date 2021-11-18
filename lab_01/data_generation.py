@@ -1,4 +1,3 @@
-from os import name
 from random import choice, random, randrange, randint
 
 vowels = ['ё', 'у', 'е', 'ы', 'а', 'о', 'э', 'я', 'и', 'ю']
@@ -227,7 +226,6 @@ numbers = []
 fio_list = []
 i = 0
 for lab in laboratories:
-    print("turn of lab ", i)
     fio = generate_scientists(surnames, men_names, lab, fio_list)
     animals = generate_animals(lab, numbers)
     numbers.extend(animals)

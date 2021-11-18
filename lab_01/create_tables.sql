@@ -1,13 +1,15 @@
-
+drop schema if exists labResearches cascade;
 create schema labResearches;
 create domain name_domain as varchar
 check(
     value ~ '[А-Я, Ё, A-Z]{1}[а-я, ё, a-z]+'
+    default 'Аа' 
 );
 
 create domain surname_domain as varchar
 check(
     value ~ '[А-Я, Ё, A-Z]{1}[а-я, ё, a-z]+(\-[А-Я, Ё, A-Z]{1}[а-я, ё, a-z]+)?'
+    default 'Аа'
 );
 create domain phone_number_domain as varchar(11)
 check(
