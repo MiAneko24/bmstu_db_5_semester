@@ -220,7 +220,7 @@ select * from new_animals;
     def update_json(self, a_id, new_name):
         try:
             return self.__exec(f"""
-            update6 new_animals
+            update new_animals
             set a_name = '{new_name}'
             where a_id = {a_id};
             select * from new_animals;""", commit=True)
